@@ -12,6 +12,7 @@
             <li><a href="admin.php?action=game-objects-show-prepare">Spielobjekte</a></li>
             <li><a href="admin.php?action=games-show-prepare">Spiel-Instanzen</a></li>
             <li><a href="admin.php?action=categories-show-prepare">Sound-Kategorien</a></li>
+            <li><a href="admin.php?action=sound-groups-show-prepare">Soundgruppen</a></li>
             <li><a href="admin.php?action=stories-show-prepare">Stories</a></li>
             <li class="divider"></li>
             <li><a href="#">Abhängigkeiten</a></li>

@@ -106,6 +106,9 @@ do
     case 'stories-show-prepare':
       require_once 'inc/actions/backend/stories-show-prepare.php';
       break;
+    case 'sound-groups-show-prepare':
+      require_once 'inc/actions/backend/sound-groups-show-prepare.php';
+      break;
     default:
       break;
   }
@@ -201,9 +204,12 @@ do
 		case 'story-delete':        
 		  require_once 'inc/views/backend/story-delete.php';
 		  break;
-		case 'stories-show':        
-		  require_once 'inc/views/backend/stories-show.php';
-		  break;
+		case 'stories-show':
+          require_once 'inc/views/backend/stories-show.php';
+          break;
+        case 'sound-groups-show':
+          require_once 'inc/views/backend/sound-groups-show.php';
+          break;
 		default:
 		  break;
 	  }
