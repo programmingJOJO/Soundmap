@@ -10,21 +10,25 @@ require_once('notification.php');
 
 <?php if (count($soundGroupArray) > 0) { ?>
     <table class="table table-striped">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th></th>
-            <th></th>
-        </tr>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th class="actions"></th>
+                <th class="actions"></th>
+            </tr>
+        </thead>
         <?php
         if(is_array($soundGroupArray)) foreach($soundGroupArray as $index => $soundGroup) {
         ?>
-            <tr>
-                <td><?php echo $soundGroup['id'];?></td>
-                <td><?php echo $soundGroup['name'];?></td>
-                <td><a href="admin.php?action=sound-group-edit-prepare&id=<?php echo $soundGroup['id'];?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                <td><a href="admin.php?action=sound-group-delete-prepare&id=<?php echo $soundGroup['id'];?>"><span class="glyphicon glyphicon-remove"></span></a></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td><?php echo $soundGroup['id'];?></td>
+                    <td><?php echo $soundGroup['name'];?></td>
+                    <td><a href="admin.php?action=sound-group-edit-prepare&id=<?php echo $soundGroup['id'];?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a href="admin.php?action=sound-group-delete-prepare&id=<?php echo $soundGroup['id'];?>"><span class="glyphicon glyphicon-remove"></span></a></td>
+                </tr>
+            </tbody>
         <?php
         }
         ?>

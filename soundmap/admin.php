@@ -109,6 +109,24 @@ do
     case 'sound-groups-show-prepare':
       require_once 'inc/actions/backend/sound-groups-show-prepare.php';
       break;
+    case 'sound-group-create-do':
+      require_once 'inc/actions/backend/sound-group-create-do.php';
+      break;
+    case 'sound-group-create-prepare':
+      require_once 'inc/actions/backend/sound-group-create-prepare.php';
+      break;
+    case 'sound-group-edit-do':
+      require_once 'inc/actions/backend/sound-group-edit-do.php';
+      break;
+    case 'sound-group-edit-prepare':
+      require_once 'inc/actions/backend/sound-group-edit-prepare.php';
+      break;
+    case 'sound-group-delete-do':
+      require_once 'inc/actions/backend/sound-group-delete-do.php';
+      break;
+    case 'sound-group-delete-prepare':
+      require_once 'inc/actions/backend/sound-group-delete-prepare.php';
+      break;
     default:
       break;
   }
@@ -209,6 +227,15 @@ do
           break;
         case 'sound-groups-show':
           require_once 'inc/views/backend/sound-groups-show.php';
+          break;
+        case 'sound-group-create':
+          require_once 'inc/views/backend/sound-group-create.php';
+          break;
+        case 'sound-group-edit':
+          require_once 'inc/views/backend/sound-group-edit.php';
+          break;
+        case 'sound-group-delete':
+          require_once 'inc/views/backend/sound-group-delete.php';
           break;
 		default:
 		  break;

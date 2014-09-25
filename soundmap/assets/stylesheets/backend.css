@@ -9,9 +9,13 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	-webkit-border-radius: 6px;
-    	-moz-border-radius: 6px;
-    	border-radius: 6px;
-}  
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#content .table th.actions {
+    width: 20px;
+}
 
 #header {
 	margin-top:50px;
