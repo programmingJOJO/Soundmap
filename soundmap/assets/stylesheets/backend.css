@@ -17,6 +17,11 @@ body {
     width: 20px;
 }
 
+#content ul.ui-sortable {
+    padding: 20px 10px;
+    background-color: #F1F1F1;
+}
+
 #header {
 	margin-top:50px;
 	text-align:right;

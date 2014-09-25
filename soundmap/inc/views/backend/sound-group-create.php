@@ -15,22 +15,17 @@ require_once('auth.php');
         <div class="row">
             <div class=" col-sm-6">
                 <label for="name">Der Gruppe zugehörigen Sounds</label>
-                <ul id="sortable1" class="connectedSortable list-group">
-                    <li class="list-group-item">Item 1</li>
-                    <li class="list-group-item">Item 2</li>
-                    <li class="list-group-item">Item 3</li>
-                    <li class="list-group-item">Item 4</li>
-                    <li class="list-group-item">Item 5</li>
+                <ul id="addable-sound-list" class="connectedSortable list-group">
                 </ul>
             </div>
             <div class=" col-sm-6">
                 <label for="name">Liste aller Sounds</label>
-                <ul id="sortable2" class="connectedSortable list-group">
-                    <li class="list-group-item">Item 1</li>
-                    <li class="list-group-item">Item 2</li>
-                    <li class="list-group-item">Item 3</li>
-                    <li class="list-group-item">Item 4</li>
-                    <li class="list-group-item">Item 5</li>
+                <ul id="available-sound-list" class="connectedSortable list-group">
+                    <?php  foreach($soundArray as $sound)
+                    {
+                        echo "<li class='list-group-item' value=\"".$sound['id']."\">".$sound['name']."</li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>

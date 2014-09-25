@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
     // Add listener
-    $( "#sortable1, #sortable2" ).sortable({
+    $( "#addable-sound-list, #available-sound-list" ).sortable({
         connectWith: ".connectedSortable"
     }).disableSelection();
 });
