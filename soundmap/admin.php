@@ -147,6 +147,7 @@ do
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 	<script src="assets/bootstrap/js/jquery-2.0.0.min.js"></script>
+	<script src="assets/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
 </head>
 <body>
 
