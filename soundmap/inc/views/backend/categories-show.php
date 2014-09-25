@@ -12,7 +12,7 @@ require_once('notification.php');
     <table class="table table-striped">
         <tr>
             <th>Name</th>
-            <th></th>
+            <th class="actions"></th>
         </tr>
     <?php if(is_array($categoryArray)) foreach($categoryArray as $index => $category) { ?>
         <tr>

@@ -14,8 +14,8 @@ require_once('notification.php');
             <th>ID</th>
             <th>Name</th>
             <th>Beschreibung</th>
-            <th></th>
-            <th></th>
+            <th class="actions"></th>
+            <th class="actions"></th>
         </tr>
     <?php
     if(is_array($storyArray)) foreach($storyArray as $index => $story) {

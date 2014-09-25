@@ -16,7 +16,7 @@ require_once('notification.php');
             <th>Name</th>
             <th>Beschreibung</th>
             <th>Kategorie</th>
-            <th></th>
+            <th class="actions"></th>
         </tr>
         <?php
         if(is_array($soundArray)) foreach($soundArray as $index => $sound) {

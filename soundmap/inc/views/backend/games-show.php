@@ -15,7 +15,7 @@ require_once('notification.php');
             <th>Runde</th>
             <th>Aktueller Spieler</th>
             <th>Story</th>
-            <th></th>
+            <th class="actions"></th>
         </tr>
     <?php
     if(is_array($gameArray)) foreach($gameArray as $index => $game) {
